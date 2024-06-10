@@ -1,0 +1,51 @@
+/* DoctorCard.css */
+
+.doctor-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.doctor-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.doctor-details {
+    flex: 1;
+}
+
+.doctor-name {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.doctor-experience, .doctor-rating {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.career-profile {
+    font-size: 1rem; /* Changed from .doctor-profile to .career-profile */
+    margin-bottom: 10px; /* Adjusted class name */
+}
+
+.book-appointment-button {
+    background-color: #3685fb; /* Changed from .book-appointment-btn to .book-appointment-button */
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-appointment-button:hover {
+    background-color: #266acf; /* Changed from .book-appointment-btn:hover to .book-appointment-button:hover */
+}
