@@ -1,0 +1,101 @@
+/* Navbar Container */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo a {
+  text-decoration: none;
+  color: #3685fb;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav__logo svg {
+  margin-left: 10px;
+}
+
+/* Navbar Links */
+.nav__links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__links.active {
+  display: flex;
+}
+
+.nav__links .link {
+  margin-left: 20px;
+}
+
+.nav__links .link a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav__links .link a:hover {
+  color: #3685fb;
+}
+
+/* Buttons */
+.btn1 {
+  background-color: #3685fb;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn1:hover {
+  background-color: #286acb;
+}
+
+/* Hamburger Icon */
+.nav__icon {
+  display: none;
+  cursor: pointer;
+}
+
+.nav__icon i {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav__links.active {
+    display: flex;
+  }
+
+  .nav__icon {
+    display: block;
+  }
+
+  .nav__links .link {
+    margin: 10px 0;
+  }
+}
