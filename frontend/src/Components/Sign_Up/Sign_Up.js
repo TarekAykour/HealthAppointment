@@ -14,14 +14,7 @@ export default function Signup() {
 
   const navigate = useNavigate();
 
-  const validateEmail = function (email) {
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return emailPattern.test(email);
-  };
-  const validatePhoneNumber = function (phone) {
-    const phoneNumberPattern = /^\d{10}$/;
-    return phoneNumberPattern.test(phone);
-  };
+
   const togglePasswordVisibility = function () {
     setShowPassword(!showPassword);
   };
@@ -66,16 +59,7 @@ export default function Signup() {
   const submitHandler = function (e) {
     e.preventDefault();
 
-    if (!validateEmail(userEmail)) {
-      setShowerr("Please Enter a Valid Email");
-      return;
-    }
-
-    if (!validatePhoneNumber(userPhone)) {
-      setErrorNumber("Phone Number Should Be 10 Digits.");
-      return;
-    }
-
+ 
     register();
   };
 
